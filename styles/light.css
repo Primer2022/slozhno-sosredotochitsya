@@ -23,6 +23,10 @@
     border-color: var(--button-hover);
   }
 
+  .decorated-zone__header-text {
+    display: none;
+  }
+
   .info__title {
     color: var(--ascient-color2);
   }
@@ -51,55 +55,57 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    --background: #fff;
-    --ascient-color: #FF8DCB;
-    --ascient-color2: #000028;
-    --title-color: #FF0070;
-    --text-color: #353430;
-    --button-hover: rgba(50, 49, 45, 0.40);
-    }
-    
-    .header {
-      background: url("images/cover-image-light.png");
-    }
-  
-    .header__title-quote {
-      color: var(--text-color);
-    }
-  
-    .header__theme-menu-button {
-      color: var(--text-color);
-      border-color: var(--text-color);
-    }
-  
-    .header__theme-menu-button:hover {
-      border-color: var(--button-hover);
-    }
-  
-    .info__title {
-      color: var(--ascient-color2);
-    }
-  
-    .decorated-zone__header {
-      display: none;
-    }
-  
-    .decorated-zone::before {
-      border-color: var(--text-color);
-    }
-  
-    .decorated-zone::after {
-      border-color: var(--text-color);
-    }
-  
-    .header__title-text {
-      color: var(--ascient-color);
-      text-shadow: 4px 4px 0px var(--title-color);
-    }
-  
-    .footer__title-text {
-      color: var(--ascient-color);
-      text-shadow: 4px 4px 0px var(--title-color);
-    }
+  --background: #fff;
+  --ascient-color: #FF8DCB;
+  --ascient-color2: #000028;
+  --title-color: #FF0070;
+  --text-color: #353430;
+  --button-hover: rgba(50, 49, 45, 0.40);
+
+  .header {
+    background: url("images/cover-image-light.png");
+  }
+
+  .header__title-quote {
+    color: var(--text-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--text-color);
+    border-color: var(--text-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border-color: var(--button-hover);
+  }
+
+  .decorated-zone__header-text {
+    display: none;
+  }
+
+  .info__title {
+    color: var(--ascient-color2);
+  }
+
+  .decorated-zone__header {
+    display: none;
+  }
+
+  .decorated-zone::before {
+    border-color: var(--text-color);
+  }
+
+  .decorated-zone::after {
+    border-color: var(--text-color);
+  }
+
+  .header__title-text {
+    color: var(--ascient-color);
+    text-shadow: 4px 4px 0px var(--title-color);
+  }
+
+  .footer__title-text {
+    color: var(--ascient-color);
+    text-shadow: 4px 4px 0px var(--title-color);
+  }
 }
