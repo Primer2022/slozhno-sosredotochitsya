@@ -6,9 +6,7 @@
   --text-color: #353430;
   --button-hover: rgba(50, 49, 45, 0.40);
 
-  .header {
-    background: url("images/cover-image-light.png");
-  }
+  background: url("images/cover-image-light.png");
 
   .header__title-quote {
     color: var(--text-color);
@@ -55,14 +53,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  --background: #fff;
-  --ascient-color: #FF8DCB;
-  --ascient-color2: #000028;
-  --title-color: #FF0070;
-  --text-color: #353430;
-  --button-hover: rgba(50, 49, 45, 0.40);
-
-  .header {
+  .page {
     background: url("images/cover-image-light.png");
   }
 
