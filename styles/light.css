@@ -1,12 +1,13 @@
 .page.theme_light {
   --background: #fff;
-  --ascient-color: #FF8DCB;
+  --ascient-color: #ff8dcb;
   --ascient-color2: #000028;
-  --title-color: #FF0070;
+  --title-color: #ffc2e6;
+  --title-shadow-color: #fc1c7c;
   --text-color: #353430;
-  --button-hover: rgba(50, 49, 45, 0.40);
+  --button-hover: rgba(50, 49, 45, 0.4);
 
-  background: url("images/cover-image-light.png");
+  background: #fff;
 
   .header__title-quote {
     color: var(--text-color);
@@ -42,19 +43,29 @@
   }
 
   .header__title-text {
-    color: var(--ascient-color);
-    text-shadow: 4px 4px 0px var(--title-color);
+    color: var(--title-color);
+    text-shadow: 4px 4px 0px var(--title-shadow-color);
   }
 
   .footer__title-text {
-    color: var(--ascient-color);
-    text-shadow: 4px 4px 0px var(--title-color);
+    color: var(--title-color);
+    text-shadow: 4px 4px 0px var(--title-shadow-color);
   }
 }
 
 @media (prefers-color-scheme: light) {
+  :root {
+    --background: #fff;
+    --ascient-color: #ff8dcb;
+    --ascient-color2: #000028;
+    --title-color: #ffc2e6;
+    --title-shadow-color: #fc1c7c;
+    --text-color: #353430;
+    --button-hover: rgba(50, 49, 45, 0.4);
+  }
+
   .page {
-    background: url("images/cover-image-light.png");
+    background: #fff;
   }
 
   .header__title-quote {
@@ -91,12 +102,12 @@
   }
 
   .header__title-text {
-    color: var(--ascient-color);
-    text-shadow: 4px 4px 0px var(--title-color);
+    color: var(--title-color);
+    text-shadow: 4px 4px 0px var(--title-shadow-color);
   }
 
   .footer__title-text {
-    color: var(--ascient-color);
-    text-shadow: 4px 4px 0px var(--title-color);
+    color: var(--title-color);
+    text-shadow: 4px 4px 0px var(--title-shadow-color);
   }
 }
