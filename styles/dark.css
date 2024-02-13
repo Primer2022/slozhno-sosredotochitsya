@@ -27,15 +27,23 @@
     border-color: var(--button-hover);
   }
 
+  .header__theme-menu-button:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--ascient-color);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border: none;
+    border-bottom: 1px solid var(--ascient-color);
+  }
+
   .decorated-zone__header-text {
     display: inline;
   }
+  
   .info__title {
-    color: var(--ascient-color2);
-  }
-
-  .decorated-zone__header {
-    display: none;
+    color: var(--ascient-color);
   }
 
   .decorated-zone::before {

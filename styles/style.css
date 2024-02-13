@@ -126,16 +126,13 @@
 
 .header__theme-menu-button {
   text-transform: lowercase;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 0 14px 0 14px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
-  padding-left: 13px;
-  padding-right: 13px;
   border: 1px solid var(--button-hover);
 }
 
@@ -151,8 +148,6 @@
 }
 
 .header__theme-menu-button_active {
-  padding-left: 13px;
-  padding-right: 13px;
   border: 1px solid var(--ascient-color);
   pointer-events: none;
 }

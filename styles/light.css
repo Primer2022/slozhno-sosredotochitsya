@@ -5,9 +5,15 @@
   --title-color: #ffc2e6;
   --title-shadow-color: #fc1c7c;
   --text-color: #353430;
-  --button-hover: rgba(50, 49, 45, 0.4);
+  --button-color: 50, 49, 45;
 
-  background: #fff;
+  background-image: url("../images/cover-image-light.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: var(--background);
+  background-attachment: fixed;
+  background-position: center;
 
   .header__title-quote {
     color: var(--text-color);
@@ -19,7 +25,23 @@
   }
 
   .header__theme-menu-button:hover {
-    border-color: var(--button-hover);
+    border: 1px solid rgba(var(--button-color), 0.4);
+  }
+  
+  .header__theme-menu-button:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(var(--button-color));
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border: none;
+    border-bottom: 1px solid rgb(var(--button-color));
+  }
+  
+  .header__theme-menu-button_active {
+    border: 1px solid rgb(var(--button-color));
+    pointer-events: none;
   }
 
   .decorated-zone__header-text {
@@ -61,11 +83,17 @@
     --title-color: #ffc2e6;
     --title-shadow-color: #fc1c7c;
     --text-color: #353430;
-    --button-hover: rgba(50, 49, 45, 0.4);
+    --button-color: 50, 49, 45;
   }
 
   .page {
-    background: #fff;
+    background-image: url("../images/cover-image-light.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: var(--background);
+    background-attachment: fixed;
+    background-position: center;
   }
 
   .header__title-quote {
@@ -78,7 +106,23 @@
   }
 
   .header__theme-menu-button:hover {
-    border-color: var(--button-hover);
+    border: 1px solid rgba(var(--button-color), 0.4);
+  }
+  
+  .header__theme-menu-button:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(var(--button-color));
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border: none;
+    border-bottom: 1px solid rgb(var(--button-color));
+  }
+  
+  .header__theme-menu-button_active {
+    border: 1px solid rgb(var(--button-color));
+    pointer-events: none;
   }
 
   .decorated-zone__header-text {
